@@ -50,7 +50,11 @@ Then simply install with **pip**:
 
 .. code-block:: bash
 
-    pip install iepy
+    sudo apt-get install python3-pip
+
+.. code-block:: bash
+
+    sudo pip3 install iepy
 
 Full details about the installation is available on the
 `Read the Docs <http://iepy.readthedocs.org/en/latest/installation.html>`__ page.
