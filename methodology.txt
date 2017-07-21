@@ -32,6 +32,12 @@ Then we go into the IEPY project that we created and we load the CSV into our Pr
 
 for f in /home/ubuntu/Desktop/split/csv_output/_*.*; do python3 bin/csv_to_iepy.py $f ;done 
 
+Export the JAVAHOME, set the location to your JAVA folder
+
+export JAVAHOME="/usr/lib/jvm/java-8-oracle/jre/bin/java"
+echo $JAVAHOME
+
+
 
 
 
