@@ -26,7 +26,17 @@ for file in split_*.*; do     mv "$file" "$file.txt"; done
 for file in _*.*; do     mv "$file" "./split/$file"; done
 
 
-
 then we need to create a csv out of every file, with first column named document_id, containing the document name on row 2 and the second column named document_text, and on row 2 the document text
+
+Then we go into the IEPY project that we created and we load the CSV into our Project
+
+for f in /home/ubuntu/Desktop/split/csv_output/_*.*; do python3 bin/csv_to_iepy.py $f ;done 
+
+
+
+
+
+
+
 
 http://www.filmedocumentare.com/dinastia-psd-culisele-deciziilor-care-ne-au-afectat-pe-toti/
