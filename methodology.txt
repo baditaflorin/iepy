@@ -18,7 +18,12 @@ for f in *.txt; do  csplit --prefix=split_$f $f /\([0-9]*\/[0-9]*\.[0-9]*\.[0-9]
 
 then change all files to have the txt entension
 mkdir split
+mkdir ./split/csv_output
+
 for file in split_*.*; do     mv "$file" "$file.txt"; done
+
+
+for file in _*.*; do     mv "$file" "./split/$file"; done
 
 
 
