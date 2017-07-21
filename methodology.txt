@@ -1,3 +1,14 @@
+Convert from pdf to txt
+
+What i tried and it did not worked perfectly (layout problems)
+Pdfminer with python. - Also slow, took around 4 days to process 20000 pdf`s
+
+what i tried and worked better
+
+mkdir txt
+for f in *.pdf; do pdftotext -layout -raw $f ./txt/$f.txt;done
+
+
 
 step 0 - set JAVEHOME using export JAVAHOME=/path/to/jave
 step 1 . create regex query
