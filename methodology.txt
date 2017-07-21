@@ -12,3 +12,5 @@ csplit oj-ro-ro-na-2009-04-30-ojroro-s4-no2310.txt /\([0-9]*\/[0-9]*\.[0-9]*\.[0
 csplit --prefix=oj-ro-ro-na-2009-04-30-ojroro-s4-no2310.TXT oj-ro-ro-na-2009-04-30-ojroro-s4-no2310.txt /\([0-9]*\/[0-9]*\.[0-9]*\.[0-9]*\)/ {*}
 
 then we need to create a csv out of every file, with first column named document_id, containing the document name on row 2 and the second column named document_name, and on row 2 the document text
+
+http://www.filmedocumentare.com/dinastia-psd-culisele-deciziilor-care-ne-au-afectat-pe-toti/
