@@ -16,6 +16,12 @@ loop
 for f in *.txt; do  csplit --prefix=split_$f $f /\([0-9]*\/[0-9]*\.[0-9]*\.[0-9]*\)/ {*}; done
 
 
+then change all files to have the txt entension
+
+for file in split_*.*; do     mv "$file" "$file.txt"; done
+
+
+
 then we need to create a csv out of every file, with first column named document_id, containing the document name on row 2 and the second column named document_text, and on row 2 the document text
 
 http://www.filmedocumentare.com/dinastia-psd-culisele-deciziilor-care-ne-au-afectat-pe-toti/
